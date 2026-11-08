@@ -1,0 +1,5 @@
+- id: leaksniff
+  name: leaksniff (ML data leakage)
+  entry: leaksniff
+  language: python
+  types_or: [python, jupyter]

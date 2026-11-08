@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leaksniff"
+version = "0.1.0"
+description = "Catch data leakage and evaluation mistakes in ML scripts and notebooks before you report a score."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Aditya Vardhan Sivalanka" }]
+keywords = ["machine-learning", "data-leakage", "scikit-learn", "linter", "jupyter", "data-science", "agent-skills"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Quality Assurance",
+  "Intended Audience :: Science/Research",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/adityavdn/leaksniff"
+Issues = "https://github.com/adityavdn/leaksniff/issues"
+
+[project.scripts]
+leaksniff = "leaksniff.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
