@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Catch data leakage and evaluation mistakes in ML scripts and notebooks before you report a score."
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Aditya Vardhan Sivalanka" }]
 keywords = ["machine-learning", "data-leakage", "scikit-learn", "linter", "jupyter", "data-science", "agent-skills"]
 classifiers = [

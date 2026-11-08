@@ -31,7 +31,7 @@ Coding agents make the same mistakes. In a small experiment (see [evals/](evals/
 pip install git+https://github.com/adityavdn/leaksniff
 ```
 
-Python 3.9+. No other dependencies: leaksniff never imports or runs your code, it reads it.
+Python 3.10+. No other dependencies: leaksniff never imports or runs your code, it reads it.
 
 ## Use
 
