@@ -19,3 +19,11 @@ jobs:
           set +e
           leaksniff tests/fixtures; code=$?
           test $code -eq 1
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: The GitHub Action passes on clean code
+        uses: ./
+        with:
+          paths: tests/fixtures/good_churn_opus.py tests/fixtures/good_genes_opus.py
